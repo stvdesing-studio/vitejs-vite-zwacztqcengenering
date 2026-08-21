@@ -1,0 +1,39 @@
+/* Importación de la tipografía oficial del sistema */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap');
+
+/* Diccionario de colores (Basado en Synergy Studio) */
+:root {
+  --bg-base: #0b1116; /* Fondo industrial profundo */
+  --bg-panel: #111a22; /* Fondo de paneles */
+  --accent-cyan: #00f0ff; /* Cian eléctrico principal */
+  --accent-neon: #ccff00; /* Amarillo/Verde Overdrive */
+  --text-main: #ffffff; /* Texto de alto contraste */
+  --text-muted: #5c7080; /* Texto secundario apagado */
+}
+
+/* Reinicio estructural básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-base);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  /* Aplicación de la fuente global */
+  font-family: 'Orbitron', sans-serif;
+  color: var(--text-main);
+  letter-spacing: 1px;
+
+  /* El Tapiz: Patrón de cuadrícula de puntos tecnológicos */
+  background-image: radial-gradient(
+    rgba(0, 240, 255, 0.05) 1px,
+    transparent 1px
+  );
+  background-size: 30px 30px;
+  background-position: center center;
+}
